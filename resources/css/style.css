@@ -1,18 +1,88 @@
+
+
 body {
     background-color: white;
-    width: 100%;
+    max-width: 100%;
+    font-family: "lato";
+    font-size: 16px;
 }
 
 nav {
     height: 64px;
-    margin: auto 24px;
+    margin: 0 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: thistle;
+    align-items: center;  
 }
 
 .logo {
     display: flex;
     align-items: center;
+    
+}
+
+#first-word {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+#second-word {
+    font-weight: 400;
+    color: rgb(138, 138, 138);
+    font-size: 1.25rem;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.navigation span {
+    margin: 0 8px;
+    font-size: 1.125rem;
+}
+
+.navigation .last {
+    margin-right: 0;
+}
+
+
+/* main part start from here*/
+
+.banner {
+    background-color: rgb(190, 190, 190);
+    display: flex;
+}
+
+.banner .banner-photo {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.banner .slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slogan h1 {
+    font-size: 2.25rem;
+    line-height: 0rem;
+    font-weight: 900;
+}
+
+.slogan h3 {
+    font-size: 1.5rem;
+    line-height: 0;
+}
+
+h4 {
+    padding: 8px;
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+}
+
+.slogan a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
 }
