@@ -1,10 +1,14 @@
-
+html {
+    
+}
 
 body {
     background-color: white;
     max-width: 100%;
     font-family: "lato";
     font-size: 16px;
+    margin: 0;
+    color: rgb(63, 63, 63);
 }
 
 nav {
@@ -48,20 +52,30 @@ nav {
 
 /* main part start from here*/
 
+main {
+    border-left: 2px solid rgb(190, 190, 190);
+    border-right: 2px solid rgb(190, 190, 190);
+}
+
 .banner {
     background-color: rgb(190, 190, 190);
     display: flex;
 }
 
 .banner .banner-photo {
-    width: 60%;
+    max-width: 60%;
     margin: 32px 24px;
+}
+
+.banner-photo img {
+    max-width: 100%;
 }
 
 .banner .slogan {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
 }
 
 .slogan h1 {
@@ -85,4 +99,94 @@ h4 {
     font-size: 1rem;
     text-decoration: none;
     color: white;
+}
+
+
+/* info-main section */
+
+.info-main {
+    display: flex;
+    width: 100%;
+}
+
+.info-left {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.info-left img {
+    margin-bottom: 32px;
+    max-width: 100%;
+}
+
+.info-left .left-text {
+    margin: 32px 0;
+}
+
+.left-texts h2 {
+    margin-bottom: 24px;
+    font-size: 2rem;
+    word-spacing: .25rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+.left-texts p {
+    font-size: 1.2rem;
+    word-spacing: .1rem;
+    letter-spacing: 1.5px;
+}
+
+.author {
+    margin-top: 2.5rem;
+    font-weight: 600;
+}
+
+
+.info-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    border-left: 1px solid rgb(190, 190, 190);
+}
+
+.detail {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.detail img {
+    max-width: 35%;
+    margin: 1rem;
+}
+
+.detail .detail-info {
+    max-width: 65%; 
+}
+
+.one img {
+    margin-top: 0;
+}
+
+.info-right .three {
+    background-color: rgb(190, 190, 190);
+}
+
+.detail-info h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.detail-info p {
+    font-size: 1.2rem;
+}
+
+.detail-info a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
 }
