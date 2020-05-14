@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     max-width: 100%;
     font-family: "lato";
     font-size: 16px;
@@ -188,4 +188,145 @@ h4 {
 .detail-info a {
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+.learning {
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    padding: 32px 56px 0 56px;
+    max-width: 100%;
+}
+
+.learning h2 {
+    padding-bottom: 32px;
+}
+
+.learning .learning-parts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.learning-parts .subjects {
+    margin:0 16px 32px 16px;
+    background-color: rgb(235, 235, 235);
+    text-align: left;
+}
+
+.subjects img {
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.subjects h3 {
+    font-size: 1.75rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+}
+
+.subjects p {
+    line-height: .5rem;
+    margin-left: 1rem;
+}
+
+.subjects .paragraph {
+    margin-bottom: 24px;
+}
+
+
+
+/* theisis exhibit section */
+
+.thesis-exhibit {
+    background-color: rgb(235, 235, 235);
+    max-width: 100%;
+    border-bottom: 2px solid rgb(220, 220, 220);
+    padding: 32px 0;
+}
+
+.exhibit {
+    display: flex;
+    width: 100%; 
+}
+
+.urban {
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.urban video {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.urban h3 {
+    font-size: 1.5rem;
+    font-weight: 700; 
+    margin-bottom: 8px;
+}
+
+.urban p {
+    margin-top: 0;
+}
+
+.exhibit-right {
+    margin-top: 32px;
+    width: 40%;
+    
+}
+
+.fisma {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(190, 190, 190);
+}
+
+.fisma img {
+    width: 35%;
+    margin: 1rem;
+}
+
+.tozihat {
+    width: 65%;
+}
+
+.tozihat h3 {
+    font-size: 1.5rem;
+}
+
+
+.then {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.then img {
+    margin: 1rem;
+    width: 35%;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 24px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer span {
+    padding-right: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
 }
