@@ -256,6 +256,12 @@ h4 {
     font-size: 1.2rem;
 }
 
+@media only screen and (min-width: 480px) {
+    .mobile-info {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .info-left {
         display: none;
@@ -263,40 +269,50 @@ h4 {
     }
 
     .info-right {
-        width: 100%;
-        margin:0;  
+        display: none;
     }
-    .info-right .three {
+
+    .info-main {
         background-color: rgb(235, 235, 235);
     }
 
-    .detail {
-        padding: 16px 0 32px 0;
+    .mobile-info {
+        margin-top: 16px;
+    }
+    .mobile-information {
+        display: flex;
+        flex-direction: column;
         max-width: 100%;
-        border-bottom: 1px solid rgb(235, 235, 235);
+        margin: 0 16px 64px 16px;
     }
 
-    .detail .big-screen {
-        display: none; 
-    }
-    .detail .mobile {
-        display: block;
-        max-width: 100%;
-        padding: 0 16px;   
-    }
-    .detail-info {
-        padding-left: 32px;
-    }
-    .detail-info h3 {
-        font-size: 1.2rem;
-    }
-    .detail-info p {
-        font-size: .8rem;
-    }
-    .detail-info a {
-        font-size: .8rem;
+    .mobile-info .akhar {
+        margin-bottom: 32px;
     }
 
+    .mobile-information img {
+        max-width: 100%;
+    }
+
+    .mobile-information .detail-info {
+        margin:16px 16px 0 16px;
+    }
+
+    .mobile-information h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin: 8px 0;
+    }
+
+    .mobile-information p {
+        font-size: 15px;
+        margin: 8px 0;
+    }
+
+    .mobile-information a {
+        font-size: 15px;
+        margin: 8px 0;
+    }
 }
 
 
