@@ -10,21 +10,31 @@
 
 <body>
     <nav>
-        <div class="logo">
-            <img src="./resources/images/ic-logo.svg" alt="logo pegeout">
-            <span id="first-word">COLMAR</span>
-            <span id="second-word">ACADEMY</span>
+        <div class="logo big-screen">
+            <a href="#"><img src="./resources/images/ic-logo.svg" alt="logo pegeout"></a>
+            <span id="first-word" class="big-screen">COLMAR</span>
+            <span id="second-word" class="big-screen">ACADEMY</span>
         </div>
 
-        <div class="navigation">
-            <span>On campus</span>
-            <span>Online</span>
-            <span>or companies</span>
-            <span class="last">Sign in</span>
+        <div class="mobile">
+            <a href="#"><img src="./resources/images/ic-logo.svg" alt="logo pegeout"></a>
+            <a href="#" class="mobile"><img src="./resources/images/ic-on-campus.svg" alt=""></a>
+            <a href="#" class="mobile"><img src="./resources/images/ic-online.svg" alt=""></a>
+            <a href="#"  class="mobile"><img src="./resources/images/ic-login.svg" alt=""></a>
+        </div>
+
+        <div class="navigation big-screen">
+            <span class="big-screen"><a href="#">On campus</a></span>
+            <span class="big-screen"><a href="#">Online</a></span>
+            <span class="big-screen"><a href="#">or companies</a></span>
+            <span class="last big-screen"><a href="#">Sign in</a></span>
+            
         </div>
     </nav>
 
     <main>
+
+        <!-- banner section -->
         <div class="banner">
             <div class="banner-photo">
                 <img src="./resources/images/banner.jpg" alt="students that are studying">
@@ -38,6 +48,8 @@
                 <h4><a href="#">Start here</a></h4>
             </div>
         </div>
+
+        <!-- info main section -->
 
         <div class="info-main">
             <div class="info-left">
@@ -59,7 +71,8 @@
 
             <div class="info-right">
                 <div class="detail one">
-                    <img src="./resources/images/information-orientation.jpg" alt="">
+                    <img class="big-screen" src="./resources/images/information-orientation.jpg" alt="">
+                    <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="">
                     <div class="detail-info">
                         <h3>Orientation date</h3>
                         <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -68,7 +81,8 @@
                 </div>
 
                 <div class="detail two">
-                    <img src="./resources/images/information-campus.jpg" alt="">
+                    <img class="big-screen" src="./resources/images/information-campus.jpg" alt="">
+                    <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="">
                     <div  class="detail-info">
                         <h3>Our campus</h3>
                         <p>Find which campus is close by you</p>
@@ -77,7 +91,8 @@
                 </div>
 
                 <div class="detail three">
-                    <img src="./resources/images/information-guest-lecture.jpg" alt="">
+                    <img class="big-screen" src="./resources/images/information-guest-lecture.jpg" alt="">
+                    <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="">
                     <div  class="detail-info">
                         <h3>Our guest lecture</h3>
                         <p>Join a keynote with Oliver Sack</p>
@@ -105,8 +120,6 @@
                         <p>Web Development, Mobile</p>
                         <p>Development, iOT, APIs</p>
                     </div>
-                    
-
                 </div>
 
                 <div class="subjects">
@@ -120,8 +133,7 @@
                         <p>Imaging & Design, Web Design,</p>
                         <p>Motion Graphics & Visual Effects,</p>
                         <p>Computer Animation</p>
-                    </div>
-                    
+                    </div>   
                 </div>
 
                 <div class="subjects">
@@ -134,22 +146,19 @@
                         <p class="courses">COURSES</p>
                         <p>User Experience Design, User</p>
                         <p>Research, Visual Design</p>
-                    </div>
-                    
+                    </div>  
                 </div>
 
                 <div class="subjects">
                     <div>
                         <img src="./resources/images/course-data.jpg" alt="">
                     </div>
-                    
                     <h3>Data</h3>
                     <div class="paragraph">
                         <p class="courses">COURSES</p>
                         <p>Data Science, Big Data, SQL, Data</p>
                         <p>Visualization</p>
-                    </div>
-                    
+                    </div> 
                 </div>
 
                 <div class="subjects">
@@ -178,10 +187,17 @@
                         <p>Mobile Marketing</p>
                     </div>
                     
-                </div>
-
-                
+                </div>   
             </div>
+            <div class="mobile">
+                <h3><a href="#">Soft engineering</a></h3>
+                <h3><a href="#">Computer art</a></h3>
+                <h3><a href="#">Design</a></h3>
+                <h3><a href="#">Data</a></h3>
+                <h3><a href="#">Business</a></h3>
+                <h3><a href="#">Marketing</a></h3>
+            </div>
+
         </div>
 
         <div class="thesis-exhibit">
@@ -217,6 +233,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="mobile">
+                <video controls>
+                    <source src="resources/videos/thesis.mp4" type="video/mp4">
+                </video>
+            </div>
+
         </div>
          
 

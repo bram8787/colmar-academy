@@ -1,5 +1,5 @@
 html {
-    
+    box-sizing: border-box;
 }
 
 body {
@@ -11,13 +11,15 @@ body {
     color: rgb(63, 63, 63);
 }
 
-nav {
-    height: 64px;
-    margin: 0 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
 }
+
+
+
+
 
 .logo {
     display: flex;
@@ -49,6 +51,32 @@ nav {
     margin-right: 0;
 }
 
+@media only screen and (min-width: 480px) {
+    nav .mobile {
+        display: none;    
+    }
+
+    nav {
+        height: 64px;
+        margin: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
+}
+@media only screen and (max-width: 480px) {
+    nav .big-screen {
+        display: none;
+    }
+    nav .mobile  {
+        display: flex;
+        justify-content: space-around;
+        height: 64px;
+        align-items: center;
+    }
+}
+    
+
 
 /* main part start from here*/
 
@@ -60,15 +88,16 @@ main {
 .banner {
     background-color: rgb(190, 190, 190);
     display: flex;
+    max-width: 100%;
 }
 
 .banner .banner-photo {
-    max-width: 60%;
+    width: 60%;
     margin: 32px 24px;
 }
 
 .banner-photo img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .banner .slogan {
@@ -99,6 +128,44 @@ h4 {
     font-size: 1rem;
     text-decoration: none;
     color: white;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        display: block;
+        width: 100%;
+    }
+   
+    .banner .banner-photo {  
+        width: 100%;
+        margin: 0;
+    }
+
+    .banner-photo img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .banner .slogan {
+        padding: 32px 16px;
+    }
+
+    .slogan h1 {
+        font-size: 1.75rem;
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .slogan h3 {
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .slogan h4 {
+        margin: 0;
+    }
 }
 
 
@@ -159,10 +226,14 @@ h4 {
     align-items: center;
 }
 
-.detail img {
+.detail .big-screen {
     max-width: 35%;
     margin: 1rem;
 }
+.detail .mobile {
+    display: none;
+}
+
 
 .detail .detail-info {
     max-width: 65%; 
@@ -189,6 +260,53 @@ h4 {
     text-decoration: none;
     font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 480px) {
+    .info-left {
+        display: none;
+        border-left: none;
+    }
+
+    .info-right {
+        width: 100%;
+        margin:0;  
+    }
+    .info-right .three {
+        background-color: rgb(235, 235, 235);
+    }
+
+    .detail {
+        padding: 16px 0 32px 0;
+        max-width: 100%;
+        border-bottom: 1px solid rgb(235, 235, 235);
+    }
+
+    .detail .big-screen {
+        display: none; 
+    }
+    .detail .mobile {
+        display: block;
+        max-width: 100%;
+        margin: 0 16px;   
+    }
+    .detail-info {
+        padding-left: 32px;
+    }
+    .detail-info h3 {
+        font-size: 1.2rem;
+    }
+    .detail-info p {
+        font-size: .8rem;
+    }
+    .detail-info a {
+        font-size: .8rem;
+    }
+
+}
+
+
+
+/* learning section */
 
 .learning {
     background-color: rgb(190, 190, 190);
@@ -235,7 +353,47 @@ h4 {
     margin-bottom: 24px;
 }
 
+@media only screen and (min-width: 480px){
+    .mobile {
+        display: none;
+    }
+}
 
+@media only screen and (max-width: 480px) {
+    .learning-parts .subjects {
+        display: none;
+    }
+
+    .learning {
+        background-color: rgb(235, 235, 235);
+        padding: 32px 16px;
+        border-top: 2px solid rgb(190, 190, 190);
+    }
+
+    .learning h2 {
+        font-size: 2rem;
+        font-weight: 900;
+        padding: 0;
+        margin: 0 0 16px 0;
+        
+    }
+
+    .mobile {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile h3 {
+        font-size: 1.25rem;
+        padding: 16px;
+        background-color: rgb(190, 190, 190);
+        margin: 0 0 8px 0;
+    }
+    .mobile a {
+        text-decoration: none;
+        color: rgb(63, 63, 63);
+    }
+}
 
 /* theisis exhibit section */
 
@@ -313,6 +471,29 @@ h4 {
     width: 35%;
 }
 
+@media only screen and (max-width: 480px) {
+    .exhibit {
+        display: none;
+    }
+
+    .thesis-exhibit {
+        padding: 32px 0 24px 0;
+        margin: 0;
+        border-top: 2px solid rgb(190, 190, 190);
+    }
+
+    .thesis-exhibit h2 {
+        font-size: 1.5rem;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .mobile video {
+        max-width: 100%;
+    }
+}
+
 
 
 footer {
@@ -333,4 +514,19 @@ footer span {
 footer a {
     text-decoration: none;
     color: rgb(63, 63, 63);
+}
+
+@media only screen and (max-width: 480px) {
+    footer span {
+        display: none;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    footer p {
+        font-size: 12px;
+        font-weight: 600;
+    }
 }
