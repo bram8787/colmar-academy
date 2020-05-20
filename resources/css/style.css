@@ -221,13 +221,11 @@ h4 {
     align-items: center;
 }
 
-.detail .big-screen {
+.detail img {
     max-width: 35%;
     margin: 1rem;
 }
-.detail .mobile {
-    display: none;
-}
+
 
 
 .detail .detail-info {
